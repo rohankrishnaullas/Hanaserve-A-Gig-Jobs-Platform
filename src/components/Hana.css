@@ -1,0 +1,211 @@
+.hana-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.hana-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.hana-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.flow-mode-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.mode-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  background: white;
+  color: #4CAF50;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mode-button:hover {
+  background: #f0f8f0;
+}
+
+.mode-button.active {
+  background: #4CAF50;
+  color: white;
+}
+
+.chat-mode-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: #f5f5f5;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.mode-option {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #666;
+}
+
+.mode-option:hover {
+  background: #e0e0e0;
+}
+
+.mode-option.active {
+  background: white;
+  color: #4CAF50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.conversation-wrapper {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  max-height: 50vh;
+}
+
+.conversation-bubble {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 80%;
+  word-wrap: break-word;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.conversation-bubble.user {
+  margin-left: auto;
+  background: #4CAF50;
+  color: white;
+  text-align: right;
+}
+
+.conversation-bubble.assistant {
+  margin-right: auto;
+  background: white;
+  color: #333;
+  border: 1px solid #e0e0e0;
+}
+
+.conversation-bubble p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.voice-examples {
+  background: #fff8e1;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  border-left: 4px solid #ffc107;
+}
+
+.voice-examples h4 {
+  margin: 0 0 0.5rem 0;
+  color: #f57c00;
+  font-size: 1rem;
+}
+
+.voice-examples p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.extracted-data {
+  background: #e8f5e9;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  border-left: 4px solid #4CAF50;
+}
+
+.extracted-data h4 {
+  margin: 0 0 0.5rem 0;
+  color: #2e7d32;
+  font-size: 1rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: #4CAF50;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.save-status {
+  margin: 0.5rem 0 0 0;
+  color: #2e7d32;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .hana-container {
+    padding: 1rem;
+  }
+
+  .hana-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .flow-mode-toggle {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .mode-button {
+    width: 100%;
+  }
+
+  .conversation-bubble {
+    max-width: 90%;
+  }
+}

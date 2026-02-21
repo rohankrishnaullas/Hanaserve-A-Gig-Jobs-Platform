@@ -1,0 +1,83 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.cache
+*.vs
+*.vspscc
+*.vssscc
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.sln.docstates
+
+# Build
+[Dd]ebugPublic/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+nuget.exe
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Azure Functions
+local.settings.json
+appsettings.Development.json
+
+# Secrets
+*.pfx
+*.publishsettings
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Others
+*.tmp
+*.temp
+*.bak
+*.log

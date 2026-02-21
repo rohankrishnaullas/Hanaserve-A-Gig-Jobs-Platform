@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="HanaServe.Core/HanaServe.Core.csproj" />
+  <Project Path="HanaServe.Data/HanaServe.Data.csproj" />
+  <Project Path="HanaServe.Functions/HanaServe.Functions.csproj" />
+  <Project Path="HanaServe.Tests/HanaServe.Tests.csproj" />
+</Solution>

@@ -1,0 +1,285 @@
+.requester-flow {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.requester-flow .flow-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.requester-flow .flow-header h1 {
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+  font-weight: 700;
+}
+
+.requester-flow .flow-header .examples-text {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.requester-flow .conversation-wrapper {
+  background: #f5f5f7;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  padding: 1.5rem;
+  min-height: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  scroll-behavior: smooth;
+}
+
+.requester-flow .conversation-bubble {
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  max-width: 80%;
+  animation: slideIn 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.requester-flow .conversation-bubble.user {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  margin-left: auto;
+  text-align: right;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  flex-direction: row-reverse;
+}
+
+.requester-flow .conversation-bubble.assistant {
+  background: white;
+  color: #333;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.requester-flow .conversation-bubble.app {
+  background: white;
+  color: #333;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.requester-flow .app-icon-small {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.requester-flow .star-icon-small {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 4px rgba(138, 43, 226, 0.6));
+}
+
+.requester-flow .conversation-bubble p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.requester-flow .flow-controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.requester-flow .primary-button {
+  background: linear-gradient(135deg, #8a2be2 0%, #9932cc 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(138, 43, 226, 0.4), inset 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.requester-flow .primary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(138, 43, 226, 0.6), inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.requester-flow .secondary-button {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(138, 43, 226, 0.5);
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.requester-flow .secondary-button:hover {
+  background: rgba(138, 43, 226, 0.1);
+  border-color: rgba(138, 43, 226, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+}
+
+.job-info {
+  background: linear-gradient(135deg, rgba(138, 43, 226, 0.15) 0%, rgba(153, 50, 204, 0.1) 100%);
+  border: 1px solid rgba(138, 43, 226, 0.4);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 6px 24px rgba(138, 43, 226, 0.2), inset 0 0 15px rgba(138, 43, 226, 0.05);
+}
+
+.job-info h3 {
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  text-shadow: 0 0 8px rgba(138, 43, 226, 0.4);
+}
+
+.job-info p {
+  margin: 0.5rem 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.job-info strong {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(138, 43, 226, 0.08);
+  border: 1px solid rgba(138, 43, 226, 0.12);
+  border-radius: 999px;
+  padding: 0.35rem 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.mode-option {
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.75);
+  transition: all 0.2s ease;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.mode-option.active {
+  background: linear-gradient(135deg, #8a2be2 0%, #9932cc 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(138, 43, 226, 0.35);
+}
+
+.chat-input-row {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 1.25rem;
+  align-items: center;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(138, 43, 226, 0.35);
+  background: rgba(138, 43, 226, 0.08);
+  color: #ffffff;
+  outline: none;
+  font-size: 1rem;
+  box-shadow: inset 0 0 10px rgba(138, 43, 226, 0.15);
+}
+
+.chat-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.voice-examples {
+  background: linear-gradient(135deg, rgba(138, 43, 226, 0.15) 0%, rgba(153, 50, 204, 0.1) 100%);
+  border: 1px solid rgba(138, 43, 226, 0.4);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 20px rgba(138, 43, 226, 0.2), inset 0 0 15px rgba(138, 43, 226, 0.05);
+}
+
+.voice-examples h4 {
+  color: #ffffff;
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(138, 43, 226, 0.4);
+}
+
+.voice-examples p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .requester-flow {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .requester-flow .flow-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .requester-flow .flow-header p {
+    font-size: 0.9rem;
+  }
+
+  .requester-flow .conversation-wrapper {
+    padding: 1rem;
+    max-height: 350px;
+  }
+
+  .requester-flow .conversation-bubble {
+    max-width: 95%;
+    padding: 0.75rem 1rem;
+  }
+
+  .requester-flow .conversation-bubble p {
+    font-size: 0.9rem;
+  }
+
+  .voice-examples {
+    padding: 0.75rem;
+  }
+
+  .voice-examples h4 {
+    font-size: 0.9rem;
+  }
+
+  .voice-examples p {
+    font-size: 0.85rem;
+  }
+}
