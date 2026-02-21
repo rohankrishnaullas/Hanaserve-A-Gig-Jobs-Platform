@@ -12,24 +12,6 @@ A voice-first React web application for connecting service providers with people
   <img src="e2e/screenshots/match-02-providerB-loggedin.png" alt="Provider Dashboard" width="45%">
 </p>
 
-### Provider Flow - Finding Work
-<p align="center">
-  <img src="e2e/screenshots/match-03-providerB-findwork.png" alt="Finding Work" width="45%">
-  <img src="e2e/screenshots/match-05-providerB-chat.png" alt="Provider Chat" width="45%">
-</p>
-
-### Requester Flow - Getting Help
-<p align="center">
-  <img src="e2e/screenshots/match-07-requesterA-loggedin.png" alt="Requester Dashboard" width="45%">
-  <img src="e2e/screenshots/match-08-requesterA-hirehelp.png" alt="Hiring Help" width="45%">
-</p>
-
-### AI Chat and Job Matching
-<p align="center">
-  <img src="e2e/screenshots/match-10-requesterA-chat.png" alt="Requester Chat" width="45%">
-  <img src="e2e/screenshots/match-11-providerB-matches.png" alt="Job Matches" width="45%">
-</p>
-
 ## 🎤 Voice-First Design
 
 This app is designed to be **voice-first**, making it accessible for users who may not be fluent in English or prefer speaking over typing. Users interact with the app primarily through voice commands using the Web Speech API.
