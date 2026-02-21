@@ -6,32 +6,25 @@ A voice-first React web application for connecting service providers with people
 
 ## 📸 Screenshots
 
-### Registration and Login
+### Dashboard & Navigation
 <p align="center">
-  <img src="e2e/screenshots/01-registration-form.png" alt="Registration Form" width="45%">
-  <img src="e2e/screenshots/03-login-form.png" alt="Login Form" width="45%">
+  <img src="e2e/screenshots/04-logged-in.png" alt="User Dashboard" width="45%">
+  <img src="e2e/screenshots/match-02-providerB-loggedin.png" alt="Provider Dashboard" width="45%">
 </p>
 
 ### Provider Flow - Finding Work
 <p align="center">
-  <img src="e2e/screenshots/match-01-providerB-register.png" alt="Provider Registration" width="30%">
-  <img src="e2e/screenshots/match-02-providerB-loggedin.png" alt="Provider Dashboard" width="30%">
-  <img src="e2e/screenshots/match-03-providerB-findwork.png" alt="Finding Work" width="30%">
+  <img src="e2e/screenshots/match-03-providerB-findwork.png" alt="Finding Work" width="45%">
+  <img src="e2e/screenshots/match-05-providerB-chat.png" alt="Provider Chat" width="45%">
 </p>
 
 ### Requester Flow - Getting Help
 <p align="center">
-  <img src="e2e/screenshots/match-06-requesterA-register.png" alt="Requester Registration" width="30%">
-  <img src="e2e/screenshots/match-07-requesterA-loggedin.png" alt="Requester Dashboard" width="30%">
-  <img src="e2e/screenshots/match-08-requesterA-hirehelp.png" alt="Hiring Help" width="30%">
+  <img src="e2e/screenshots/match-07-requesterA-loggedin.png" alt="Requester Dashboard" width="45%">
+  <img src="e2e/screenshots/match-08-requesterA-hirehelp.png" alt="Hiring Help" width="45%">
 </p>
 
-### AI Chat and Matching
-<p align="center">
-  <img src="e2e/screenshots/05-hana-chat.png" alt="Hana AI Chat" width="45%">
-  <img src="e2e/screenshots/match-05-providerB-chat.png" alt="Provider Chat" width="45%">
-</p>
-
+### AI Chat and Job Matching
 <p align="center">
   <img src="e2e/screenshots/match-10-requesterA-chat.png" alt="Requester Chat" width="45%">
   <img src="e2e/screenshots/match-11-providerB-matches.png" alt="Job Matches" width="45%">
